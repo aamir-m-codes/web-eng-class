@@ -16,18 +16,22 @@ This repository contains HTML, CSS, and JavaScript files for web development pra
 
 ## Download and Setup
 
-1. Install Node.js:
+1. Download the repository:
+   - Click the Code button (in the main page of repository), then choose Download ZIP.
+   - Extract the ZIP file to a folder on your computer.
+
+2. Install Node.js:
    - Visit https://nodejs.org/ and download the latest LTS version for your operating system.
    - Follow the installer instructions.
 
-2. Verify installation:
+3. Verify installation:
    - Open a terminal and run:
      ```bash
      node -v
      npm -v
      ```
 
-3. Optional: Install Visual Studio Code:
+4. Optional: Install Visual Studio Code:
    - Visit https://code.visualstudio.com/ and download the editor.
    - Open the folder in VS Code for easier browsing and editing.
 
