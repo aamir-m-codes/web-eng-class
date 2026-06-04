@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover{
+            color: red;
+        }
+
+        a:visited{
+            color: rgb(100, 25, 181);
+        }
+
+        a:active{
+            color: green;
+        }
+
+        a:link{
+            color: chartreuse;
+        }
+
+        ul :first-child{
+            font-size: 20px;
+        }
+
+        ul :last-child{
+            font-size: 40px;
+        }
+
+        ul :nth-child(5){
+            color: blue;
+        }
+
+        ul :nth-last-child(2){
+            color: aqua;
+        }
+
+        p:first-child{
+            font-size: 25px;
+            color: cadetblue;
+        }
+
+        p:last-of-type{
+            color: blueviolet;
+        }
+
+        p:nth-of-type(2){
+            font-size: 26px;
+        }
+
+        input:focus{
+            border-color: rebeccapurple;
+            outline: 2px solid rebeccapurple;
+
+            border-radius: 20px;
+        }
+
+        input:user-valid{
+            border: 2px solid green;
+            outline: 2px solid green;
+        }
+
+        input:user-invalid{
+            border: 2px solid red;
+            outline: 2px solid red;
+        }
+
+        .error-msg{
+            display: none;
+        }
+
+        input:user-invalid + .error-msg{
+            display: block;
+            color: red;
+        }
+
+        input:checked{
+            accent-color: red;
+
+            border: none;
+        }
+
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+
+            border-radius: 50%;
+
+            position: relative;
+        }
+
+        .circle::before{
+            content:'';
+            position: absolute;
+            top: 80px;
+            left: 60%;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(35, 57, 124);
+
+            border-radius: 50%;
+        }
+
+        
+        .circle::after{
+            content:'';
+            position: absolute;
+            top: 70px;
+            left: -20px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(21, 157, 25);
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" >Google</a>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <div>
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor olor nisi.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Last paragraph</p>
+    </div>
+    <p>Paragraph 4</p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"/>
+    <br>
+    <span class="error-msg">Invalid Input</span>
+
+    <input type="radio">
+
+    <div class="circle"></div>
+</body>
+</html>

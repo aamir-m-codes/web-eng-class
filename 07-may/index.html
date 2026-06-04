@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myAnimation {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: rgb(37, 21, 107);
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                background-color: rgb(30, 152, 60);
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                background-color: black;
+            }
+            75%{
+                left: 0px;
+                top: 200px;
+                background-color: rebeccapurple;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                background-color: red; 
+            }
+        }
+        .box{
+            width: 100%;
+            /* animation-duration: 5s; */
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            /* animation-delay: 1s; */
+            /* animation-direction: ; */
+            animation-iteration-count:2;
+            /* animation-play-state:paused; */
+            position: relative;
+        }
+
+        h1{
+            font-size: 72px;
+        }
+        
+        @media screen and (min-width:614px){
+            h1{
+                font-size: 60px;
+                color: red;
+            }
+        }
+        @media screen and (min-width:992px){
+            h1{
+                font-size: 48px;
+                color: rgb(27, 168, 37);
+            }
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur quo dignissimos nulla sint magnam suscipit nostrum est beatae ratione adipisci commodi iste doloremque, ex illum consectetur quos. Fugiat.</h1>
+    </div>
+</body>
+</html>screen

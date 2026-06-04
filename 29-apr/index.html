@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main aside, article{
+            height: 50vh;
+        }
+
+        .as1, .as2{
+            background-color: chartreuse;
+
+        }
+
+        .as1{
+            order: 1;
+            flex: 1 0 25%;
+        }
+
+        .as2{
+            order: 3;
+            flex: 1 0 25%;
+        }
+        article{
+            background-color: brown;
+            order: 2;
+            flex: 2 0 50%;
+        }
+
+        footer{
+            background-color: burlywood;
+            height: 100%;
+        }
+        ul{
+            display: flex;
+
+        }
+        .logo{
+            margin-right: auto;
+        }
+        li{
+            list-style: none;
+            margin: 0 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">Logo</li>
+                <li>Home</li>
+                <li>Service</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="as1">News</aside>
+        <aside class="as2">Blog</aside>
+        <article>Aritcle</article>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

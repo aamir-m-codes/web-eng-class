@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    height: 300px;
+    width: 200px;
+    background-color: cadetblue;
+}
+
+.box:hover{
+    box-shadow: 10px 10px 5px black;
+    transform: scale(-0.7);
+    transition: all 2s;
+}

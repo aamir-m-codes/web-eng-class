@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* overflow: hidden; */
+        }
+
+        body{
+            height: 100vh;
+        }
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(172, 51, 51);
+            position: absolute;
+            z-index: 3;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(181, 196, 14);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .box3{
+width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+left: 0;
+            top: 0;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"> </div>
+    <div class="box3"></div>
+</body>
+</html>

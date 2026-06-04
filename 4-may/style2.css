@@ -1,0 +1,131 @@
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+  background: white;
+}
+
+.navbar h2 a{
+  text-decoration: none;
+  color: hsl(270, 9%, 17%);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-btn {
+  border: 2px solid var(--very-dark-violet);
+  padding: 10px 20px;
+  color: var(--very-dark-violet) !important;
+}
+
+.hero {
+  background-color: var(--dark-violet);
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  background-image:
+    url('images/bg-pattern-intro-right-desktop.svg'),
+    url('images/bg-pattern-intro-left-desktop.svg');
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.accent-line {
+  width: 150px;
+  height: 1px;
+  background: white;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1.5px solid white;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--dark-violet);
+}
+
+/* The Image Overlap Effect */
+.hero-image {
+  flex: 1;
+  position: relative;
+  top: 150px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
